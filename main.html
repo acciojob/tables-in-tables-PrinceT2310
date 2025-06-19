@@ -5,10 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Table</title>
     <link rel="stylesheet" href="style.css" />
+	  <style>
+		  table,tr,td,th{
+			  border: 1px solid black;
+		  }
+		  table{
+			  /* text-align: center; */
+		  }
+		  caption{
+			  border: 1px solid black;
+		  }
+		  caption{
+			  font-weight: bold; 
+		  }
+		  .nested{
+			    margin: auto;
+                width: 90%;
+		  }
+	  </style>
   </head>
   <body>
     <table style="width: 100%; height: 100%">
       <!-- Your code here -->
+		<tr>
+			<td style="width: 50%; vertical-align: top;">
+				<table class="nested">
+					<caption><b>Nested Table 2</b></caption>
+					<tr>
+			            <th>Column 1</th>
+			            <th>Column 2</th>
+		           </tr>
+		           <tr>
+			            <td>abc</td>
+			            <td>def</td>
+		           </tr>	
+				</table>
+			</td>
+			<td style="width: 50%; vertical-align: top;">
+				<table class="nested" >	
+				    <caption><b>Nested Table 1</b></caption>
+					<tr>
+						<td>
+				            <ul style="text-align: left; padding-left: 20px;">
+				                <li>List item</li>
+				                <li>List item</li>
+				                <li>List item</li>
+			               </ul>
+				      </td>
+				   </tr>		
+			    </table>	
+			</td>
+		</tr>
+
+		<tr>
+			<td style="width: 50%; vertical-align: top;">
+				<table class="nested">
+					<caption><b>Nested Table 3</b></caption>
+					<tr>
+			            <td><a href="">Nested Table</a></td>
+			            <td>Demo Continued</td>
+		           </tr>	
+				</table>
+			</td>
+			<td style="width: 50%; vertical-align: top;">
+				<table class="nested">
+					<tr>
+			            <th>Nested Table 4</th>
+		           </tr>
+					<tr>
+			            <th style="background-color: black; color: white;">HTML</th>
+		           </tr>
+			    </table>	
+			</td>
+		</tr>
     </table>
   </body>
 </html>
